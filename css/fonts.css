@@ -1,0 +1,23 @@
+@font-face {
+    font-family: vazir-light;
+    src: url(../fonts/vazir-font-v16.1.0/Vazir-Light.eot),
+           url(../fonts/vazir-font-v16.1.0/Vazir-Light.ttf),
+           url(../fonts/vazir-font-v16.1.0/Vazir-Light.woff),
+           url(../fonts/vazir-font-v16.1.0/Vazir-Light.woff2);
+           font-weight: 400;
+}
+
+@font-face {
+    font-family: vazir-bold;
+    src: url(../fonts/vazir-font-v16.1.0/Vazir-Bold.eot),
+           url(../fonts/vazir-font-v16.1.0/Vazir-Bold.ttf),
+           url(../fonts/vazir-font-v16.1.0/Vazir-Bold.woff),
+           url(../fonts/vazir-font-v16.1.0/Vazir-Bold.woff2);
+           font-weight: 600;
+}
+
+@font-face {
+    font-family: parvaz;
+    src: url(../fonts/W_parvaz/W_parvaz.TTF);
+    font-weight: 400
+}

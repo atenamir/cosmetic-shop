@@ -1,0 +1,133 @@
+@import url(./styles.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: vazirmatn ;
+}
+body{
+    background:#f3d4dc !important ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login-page .singup-card{
+    background: #ffdbd9;
+    width: 350px;
+}
+.login-page .singup-card h2{
+  font-family: parvaz;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.login-page .singup-card .input-box{
+    position: relative;
+}
+.login-page .singup-card .input-box input{
+    outline: none;
+    direction: rtl !important;
+    
+}
+.login-page .singup-card .input-box span{
+    position: absolute;
+    transform: translate(-100% , 30% );
+    font-size: 13px;
+    color: rgb(173, 174, 178);
+    transition: all .3s ease;
+    pointer-events: none;
+    width: 70px;
+    text-align: end;
+    padding: 0 1px;
+}
+.login-page .singup-card .input-box  input:valid ~ span  ,
+.login-page .singup-card .input-box  input:focus ~ span {
+    color:#2f2538 ;
+    border: 1px solid #cea0a0;
+   border-radius: 10px;
+   font-size: 10px;
+   text-align: center;
+   transform: translate(-110%, -50%);
+   background: #fff !important;
+}
+.login-page .singup-card .btn{
+    border-color:  rgba(143, 143, 143, 0.588) !important;
+    transition: all .2s linear;
+}
+.login-page .singup-card .btn:hover{
+   background-color: #cea0a0;
+   color: #fff;
+   border: none !important;
+}
+.login-page .singup-card .input-box i{
+  position: absolute;
+  left: 30px;
+  top: 13px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+/*========================= signin box============== */
+.login-page .signin-box{
+    background: #ffdbd9;
+    display: none;
+    width: 350px;
+}
+.login-page .signin-box h2{
+  font-family: parvaz;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.login-page .signin-box .input-box{
+    position: relative;
+}
+.login-page .signin-box .input-box input{
+    outline: none;
+    direction: rtl !important;
+}
+
+.login-page .signin-box .input-box span{
+    position: absolute;
+    transform: translate(-100% , 30% );
+    font-size: 13px;
+    color: rgb(173, 174, 178);
+    transition: all .3s ease;
+    pointer-events: none;
+    width: 70px;
+    text-align: end;
+    padding: 0 1px;
+    background: #fff !important;
+}
+.login-page .signin-box .input-box  input:valid ~ span  ,
+.login-page .signin-box .input-box  input:focus ~ span {
+    color:#2f2538 ;
+    border: 1px solid #cea0a0;
+   border-radius: 10px;
+   font-size: 10px;
+   text-align: center;
+   transform: translate(-110%, -50%);
+ 
+}
+.login-page .signin-box .btn{
+    border-color:  rgba(143, 143, 143, 0.588) !important;
+    transition: all .2s linear;
+}
+.login-page .signin-box .btn:hover{
+   background-color: #cea0a0;
+   color: #fff;
+   border: none !important;
+}
+.login-page .signin-box .input-box i{
+    position: absolute;
+    left: 30px;
+    top: 13px;
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+.login-page .signin-box.active{
+    display: block;
+}
+.login-page .singup-card.active{
+    display: none;
+}
+
