@@ -34,4 +34,3 @@ const togglePass = (e) => {
 
 let doesLoggedIn = JSON.parse(localStorage.getItem('logged-in'))?.username;
 
-console.log(doesLoggedIn)

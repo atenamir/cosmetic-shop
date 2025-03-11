@@ -48,7 +48,7 @@ loginPage.addEventListener("submit", (e) => {
       //  === add user to users who logged in ===
       localStorage.setItem("logged-in", JSON.stringify({ username: username }));
       //  === switch to home page ===
-      location.replace("http://127.0.0.1:5500/cosmetic%20shop/index.html");
+      location.replace("/index.html");
     } else {
       alert("رمز عبور یا نام کاربری اشتباه است");
     }

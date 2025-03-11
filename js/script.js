@@ -65,7 +65,7 @@ const add_product_to_newestBar = (item) => {
     if (product.id < 10) {
       let new_element = document.createElement("a");
       new_element.href =
-        "http://127.0.0.1:5500/cosmetic%20shop/productDetail.html?id="+product.id;
+        "/productDetail.html?id="+product.id;
 
       new_element.classList.add("text-decoration-none");
       new_element.innerHTML = `<div
@@ -100,7 +100,7 @@ const add_product_to_offBar = (item) => {
     if (product.id < 10) {
       let new_element = document.createElement("a");
       new_element.href =
-        "http://127.0.0.1:5500/cosmetic%20shop/productDetail.html?id="+product.id;
+        "/productDetail.html?id="+product.id;
 
       new_element.classList.add("text-decoration-none");
       new_element.innerHTML = `<div
@@ -136,7 +136,7 @@ const sec = document.querySelector(".box1");
 const min = document.querySelector(".box2");
 const hour = document.querySelector(".box3");
 
-let targetTime = new Date("March 3 , 2025 00:00:00").getTime();
+let targetTime = new Date("March 30 , 2025 00:00:00").getTime();
 
 setInterval(function () {
   let currontTime = new Date().getTime();
@@ -202,11 +202,11 @@ if (doesUserLoggedIn) {
 
   desktopLogOutContainer.innerHTML = `<p class="exit-desktop" onclick="userExit()">خروج</p>`;
 } else {
-  loginContainer.innerHTML = `<a href="http://127.0.0.1:5500/cosmetic%20shop/login.html" class="text-decoration-none link-dark">
+  loginContainer.innerHTML = `<a href="/login.html" class="text-decoration-none link-dark">
                 ورود
               </a>`;
   //  === in DESKTOP mode ===
-  desktopLoginContainer.innerHTML = `<a href="http://127.0.0.1:5500/cosmetic%20shop/login.html" class="text-decoration-none link-light">
+  desktopLoginContainer.innerHTML = `<a href="/login.html" class="text-decoration-none link-light">
                 ورود
               </a>`;
 }

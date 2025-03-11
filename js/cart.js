@@ -39,11 +39,11 @@ if (doesUserLoggedIn) {
 
   desktopLogOutContainer.innerHTML = `<p class="exit-desktop" onclick="userExit()">خروج</p>`;
 } else {
-  loginContainer.innerHTML = `<a href="http://127.0.0.1:5500/cosmetic%20shop/login.html" class="text-decoration-none link-dark">
+  loginContainer.innerHTML = `<a href="/login.html" class="text-decoration-none link-dark">
                 ورود
               </a>`;
   //  === in DESKTOP mode ===
-  desktopLoginContainer.innerHTML = `<a href="http://127.0.0.1:5500/cosmetic%20shop/login.html" class="text-decoration-none link-light">
+  desktopLoginContainer.innerHTML = `<a href="/login.html" class="text-decoration-none link-light">
                 ورود
               </a>`;
 }
